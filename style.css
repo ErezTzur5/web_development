@@ -29,6 +29,9 @@ main{
     border-radius: 25px;
     overflow: hidden;
 }
+h3,h5{
+    font-weight: 400;
+}
 
 img{
     width:300px;
@@ -102,7 +105,39 @@ h5{
     }
 
     main {
-        width: 100%; /* Make the main element full width */
-        margin-top: 100px; /* Adjusted margin top */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 100px;
+        height: 100%;
+    }
+
+    p{
+        font-size: 15px;
+        text-align:left;
+    }
+    h1{
+        font-size: 36px;
+        
+    }
+    .cart{
+        padding: 15px;
+        width: 300px;
+    }
+    .image{
+        width:100%;
+        height:calc(100%*1/2.8);
+        background-image: url("images/image-product-desktop.jpg");
+        background-size: cover;
+        background-position: center center;
+        overflow: hidden;
+        
+    }
+    h2{
+        font-size: 30px;
+        margin-right: 20px;
+    }
+    h5{
+        padding-right: 120px;
     }
 }
