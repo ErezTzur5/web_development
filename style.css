@@ -25,7 +25,7 @@ main{
     display: flex;
     margin-inline: auto;
     margin-top: 200px;
-    width: 600px;
+    width: 620px;
     border-radius: 25px;
     overflow: hidden;
 }
@@ -34,7 +34,7 @@ h3,h5{
 }
 
 img{
-    width:300px;
+    width:320px;
     display: block;
 }
 
@@ -68,7 +68,7 @@ p{
     padding: 15px;
     display: block;
     text-align: center;
-    width: 200px;
+    width: 230px;
     color: white;
 }
 
@@ -76,10 +76,18 @@ svg{
     margin-right: 10px;
 }
 
-.money{
+.money {
     display: flex;
     justify-content: space-evenly;
 
+}
+.money h2 {
+    font-size:35px;
+    margin-right: 20px;
+}
+
+.money h5{
+    padding-left: 5px;
 }
 
 h5{
@@ -99,9 +107,9 @@ h5{
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
     :root {
-        --page-padding: 10px; /* Adjusted padding for smaller screens */
+        --page-padding: 10px;
     }
 
     main {
@@ -111,7 +119,11 @@ h5{
         margin-top: 100px;
         height: 100%;
     }
-
+    body {
+        height: 100%;
+        margin: 0;
+        
+    }
     p{
         font-size: 15px;
         text-align:left;
@@ -124,12 +136,14 @@ h5{
         padding: 15px;
         width: 300px;
     }
+    img{
+        width:100%;
+        display: block;
+        margin-top: -35%;
+    }
     .image{
         width:100%;
-        height:calc(100%*1/2.8);
-        background-image: url("images/image-product-desktop.jpg");
-        background-size: cover;
-        background-position: center center;
+        height:calc(100%*1/2.7);
         overflow: hidden;
         
     }
@@ -139,5 +153,8 @@ h5{
     }
     h5{
         padding-right: 120px;
+    }
+    h1{
+        margin-top: 0;
     }
 }
